@@ -17,6 +17,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<http><body></body></html>\n")
 }
 
+func handlerDigest(w http.ResponseWriter, r *http.Request) {
+
+}
+
 func main() {
 	var httpServer http.Server
 	http.HandleFunc("/", handler)
